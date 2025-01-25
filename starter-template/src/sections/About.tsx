@@ -141,7 +141,7 @@ const languagesRank = [
 
 export const AboutSection = () => {
   return (
-    <div className="pb-20">
+    <section className="py-16 lg:py-24">
       <div className="container">
         <SectionHeader
           title="About Me"
@@ -215,6 +215,6 @@ export const AboutSection = () => {
           </Card>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

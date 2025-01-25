@@ -1,6 +1,4 @@
 import { SectionHeader } from "@/components/SectionHeader";
-import Image from "next/image";
-import test from "node:test";
 import { Card } from "@/components/Card";
 
 const testimonials = [
@@ -25,7 +23,7 @@ const testimonials = [
 
 export const TestimonialsSection = () => {
   return (
-    <div className="py-16 lg:py-24">
+    <section id="about-section" className="py-16 lg:py-24">
       <div className="container">
         <SectionHeader
           eyebrow="Happy Manager"
@@ -56,6 +54,6 @@ export const TestimonialsSection = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

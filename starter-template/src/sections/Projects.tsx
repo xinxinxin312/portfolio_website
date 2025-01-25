@@ -93,7 +93,7 @@ const portfolioProjects = [
 
 export const ProjectsSection = () => {
   return (
-    <section className="pb-10 lg:py-24">
+    <section id="projects-section" className="pb-10 lg:py-24">
       <div className="container">
         <SectionHeader
           title="Co-op Work Projects"
@@ -122,9 +122,9 @@ export const ProjectsSection = () => {
                     {project.results.map((result) => (
                       <li
                         key={result.title}
-                        className="flex gap-2 text-sm md:text-base text-white/50"
+                        className="flex gap-2 text-sm md:text-base text-white/50 items-center"
                       >
-                        <CheckCircleIcon className="size-5 md:size-6" />
+                        <CheckCircleIcon className="w-5 h-5 md:w-6 md:h-6 flex-shrink-0" />
                         <span>{result.title}</span>
                       </li>
                     ))}
