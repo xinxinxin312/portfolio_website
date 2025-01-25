@@ -4,43 +4,90 @@ import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
+import { SectionHeader } from "@/components/SectionHeader";
+import { Card } from "@/components/Card";
 
 const portfolioProjects = [
   {
-    company: "Acme Corp",
-    year: "2022",
-    title: "Dark Saas Landing Page",
+    company: "Lim Geomatics",
+    year: "Jan 2024 - Jul 2024",
+    title: "Flutter Mobile App",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      {
+        title:
+          "Developed a Flutter application in a team of 3-4, providing navigation and safety features for forestry workers, including geo-data visualization.",
+      },
+      {
+        title:
+          "Built a sample application enabling communication with embedded devices via Bluetooth.",
+      },
+      {
+        title:
+          "Designed and implemented a library for OAuth2 authentication to ArcGIS through a REST API.",
+      },
+      {
+        title:
+          "Created a library to query data from ArcGIS and display JSON geo-data in map layers. .",
+      },
+      {
+        title:
+          "Engineered a solution to integrate and display various mainstream map tile formats within the app.",
+      },
+      {
+        title:
+          "Designed a library for satellite communication with embedded devices.",
+      },
+      {
+        title:
+          "Led a team of 4 in the absence of our manager for about two weeks, including pr review and task management.",
+      },
+      {
+        title:
+          "Collaborated with the UI/UX designer and QA to enhance user experience.",
+      },
     ],
-    link: "https://youtu.be/4k7IdSLxh6w",
-    image: darkSaasLandingPage,
   },
   {
-    company: "Innovative Co",
-    year: "2021",
-    title: "Light Saas Landing Page",
+    company: "Lim Geomatics",
+    year: "Sep 2023 - Jan 2024",
+    title: "Configuration Tool for Embedded Application",
     results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
+      {
+        title:
+          "Independently developed a Java-based configuration tool for Windows, enabling communication with embedded devices via the Kermit protocol over serial communication. ",
+      },
+      {
+        title:
+          "Added new functionalities and fixed bugs in the embedded application such as motion detection. ",
+      },
+      {
+        title:
+          "Collaborated with our UI/UX designer for a better GUI experience.",
+      },
     ],
-    link: "https://youtu.be/7hi5zwO75yc",
-    image: lightSaasLandingPage,
   },
   {
-    company: "Quantum Dynamics",
-    year: "2023",
-    title: "AI Startup Landing Page",
+    company: "Lim Geomatics",
+    year: "Oct 2023 - Dec 2023",
+    title: "Real-time Location Sharing and Tracking",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      {
+        title:
+          "Developed a real-time location-sharing feature for a cross-platform C# application utilizing satellite communication and ArcGIS.",
+      },
+      {
+        title:
+          "Developed mechanisms to upload and download location data based on satellite signal strength and update locations dynamically on the map.",
+      },
+      {
+        title:
+          "Collaborated with my supervisor to meet the tight deadline of two weeks without any previous experience with C# and later enhanced the feature by implementing a tracking display for a more user-friendly experience.",
+      },
+      {
+        title:
+          "Added a 'walking mode' feature to switch GPS data sources between the embedded device and the tablet.",
+      },
     ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
-    image: aiStartupLandingPage,
   },
 ];
 
@@ -48,26 +95,21 @@ export const ProjectsSection = () => {
   return (
     <section className="pb-10 lg:py-24">
       <div className="container">
-        <div className="flex justify-center">
-          <p className="uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text text-center">
-            Real-world Results
-          </p>
-        </div>
-        <h2 className="font-serif text-3xl md:text-5xl text-center mt-6">
-          Featured Projects
-        </h2>
-        <p className="text-center md:text-lg lg:text-xl text-white/60 mt-4 max-w-md mx-auto">
-          See how I transformed concepts into engaging digital experiences
-        </p>
+        <SectionHeader
+          title="Co-op Work Projects"
+          eyebrow="Real-world Results"
+          description="Projects that I have worked on during my 3 co-op terms at Lim Geomatics."
+        />
+
         <div className="flex flex-col mt-10 md:mt-20 gap-10">
           {portfolioProjects.map((project) => (
-            <div
+            <Card
               key={project.title}
-              className="bg-gray-800 rounded-3xl relative z-0 overflow-hidden after:content-[''] after:absolute after:inset-0 after:outline-2 after:-outline-offset-2 after:rounded-3xl after:outline-white/20 px-8 pt-8 md:pt-12 md:px-10 lg:pt-16 lg:px-20 after:pointer-events-none"
+              className="px-8 pt-8 pb=0 md:pt-12 md:px-10 lg:pt-16 lg:px-20 "
             >
-              <div className="lg:grid lg:grid-cols-2 lg:gap-16">
+            
                 <div className="lg:pb-16">
-                  <div className="bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex font-bold uppercase traking-widest text-sm text-transparent bg-clip-text">
+                  <div className="bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex font-bold uppercase traking-widest text-sm text-transparent bg-clip-text gap-2">
                     <span>{project.company}</span>
                     <span>&bull;</span>
                     <span>{project.year}</span>
@@ -88,22 +130,26 @@ export const ProjectsSection = () => {
                     ))}
                   </ul>
 
-                  <a href={project.link}>
-                    <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8">
-                      <span>View Live Site</span>
-                      <ArrowUpRightIcon className="size-4" />
-                    </button>
-                  </a>
+                  {/* {project.link && (
+                    <a href={project.link}>
+                      <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8">
+                        <span>View Live Site</span>
+                        <ArrowUpRightIcon className="size-4" />
+                      </button>
+                    </a>
+                  )} */}
                 </div>
-                <div className="relative">
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none"
-                  />
-                </div>
-              </div>
-            </div>
+                {/* {project.image && (
+                  <div className="relative">
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none"
+                    />
+                  </div>
+                )} */}
+              {/* </div> */}
+            </Card>
           ))}
         </div>
       </div>
