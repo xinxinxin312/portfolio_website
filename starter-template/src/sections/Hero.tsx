@@ -27,7 +27,7 @@ export const HeroSection = () => {
         </div>
         <div className="max-w-lg mx-auto">
           <h1 className="font-serif text-3xl md:text-5xl text-center mt=8 tracking-wide">
-            Hey there! I'm <span className="text-emerald-300">Xin Jiang</span>
+            Hey there! Im <span className="text-emerald-300">Xin Jiang</span>
           </h1>
           <p className="mt-4 text-center text-white/60 md:text-lg">
             This website is still under construction...
