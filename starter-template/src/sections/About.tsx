@@ -56,12 +56,12 @@ const hobbies = [
     emoji: "🏸",
   },
   {
-    title: "Table tennis",
+    title: "Table Tennis",
     emoji: "🏓",
   },
   {
     title: "Anime",
-    emoji: "🎌",
+    emoji: "👾",
   },
   {
     title: "Ukelele",
@@ -127,15 +127,15 @@ const languagesRank = [
   },
   {
     title: "C++",
-    emoji: "👨‍💼",
+    emoji: "",
   },
   {
     title: "C#",
-    emoji: "👨‍💼",
+    emoji: "",
   },
   {
     title: "C",
-    emoji: "👨‍💼",
+    emoji: "",
   },
 ];
 

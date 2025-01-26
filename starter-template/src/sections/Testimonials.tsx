@@ -8,7 +8,7 @@ const testimonials = [
     text: (
       <>
         <p>
-          &#8226; Xin was key software developer in a tiger team that was formed to save a key business pursuit. Earlier, I was impressed by how quick she learned new concepts and develop a solution on in weeks when I was expecting that it would take her a couple of months. Accordingly, I felt that she could help the tiger team and she proved me that I was right.
+          &#8226; Xin was key software developer in a tiger team that was formed to save a key business pursuit. Earlier, I was impressed by how quick she learned new concepts and developed a solution on in weeks when I was expecting that it would take her a couple of months. Accordingly, I felt that she could help the tiger team and she proved me that I was right.
         </p>
         <p className="mt-4">
           &#8226; Over my over 30 years of work experience in Canada, I had Co-op students from Waterloo, SFU, UVic, UBC, and Queens. Xin is way up the top.

@@ -14,9 +14,10 @@ export const HeroSection = () => {
   };
 
   return (
-    <section id="home-section" className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
-     
-
+    <section
+      id="home-section"
+      className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip"
+    >
       <div className="container">
         <div className="flex flex-col items-center">
           {/* <Image
