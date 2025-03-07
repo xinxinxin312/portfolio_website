@@ -34,14 +34,41 @@ const tools = [
   },
 ];
 
+const interests = [
+  {
+    title: "Algorithm",
+    emoji: "📜",
+  },
+  {
+    title: "Data Structure",
+    emoji: "⛰️",
+  },
+  {
+    title: "AI",
+    emoji: "🧠",
+  },
+  {
+    title: "Embedded Systems",
+    emoji: "📟",
+  },
+  {
+    title: "System Architecture",
+    emoji: "🏗️",
+  },
+  {
+    title: "Robotics",
+    emoji: "🤖",
+  },
+];
+
 const hobbies = [
   {
     title: "Board Games",
-    emoji: "🎲",
+    emoji: "♟️",
   },
   {
     title: "Suduko",
-    emoji: "🧩",
+    emoji: "🔢",
   },
   {
     title: "Detective Stories",
@@ -58,6 +85,10 @@ const hobbies = [
   {
     title: "Table Tennis",
     emoji: "🏓",
+  },
+  {
+    title: "Swimming",
+    emoji: "🏊",
   },
   {
     title: "Anime",
@@ -79,6 +110,14 @@ const expectations = [
     emoji: "💰",
   },
   {
+    title: "Learning Support",
+    emoji: "📚",
+  },
+  {
+    title: "Always New Challenges",
+    emoji: "🎯",
+  },
+  {
     title: "Carryover Vacations",
     emoji: "🏖️",
   },
@@ -95,11 +134,16 @@ const expectations = [
 const softSkills = [
   {
     title: "Problem Solving",
-    description: "It's just fun. I need some new challenges to feel alive.",
+    description: "It's just fun! I need some new challenges to feel alive.",
+  },
+  {
+    title: "Time and Task Management",
+    description:
+      "I always have a few tasks each week, and I always finish them on time.",
   },
   {
     title: "Team Collaboration",
-    description: "I love overcooked!",
+    description: "I love Overcooked!",
   },
   {
     title: "Team Leadership",
@@ -108,7 +152,7 @@ const softSkills = [
   {
     title: "Project Management",
     description:
-      "Probably not the role of a junior developer, but I'm good at assigning tasks.",
+      "Probably not the role of a junior developer, but I'm good at breaking down a project and assigning tasks.",
   },
 ];
 
@@ -176,20 +220,17 @@ export const AboutSection = () => {
             </div>
           </Card>
 
-          {/* <Card>
-            <CardHeader title="My Toolbox" description="" />
+          <Card>
+            <CardHeader title="My Field of Interests" description="" />
             <div className="mt-4">
-              {tools.map((tool) => (
-                <div
-                  key={tool.title}
-                  className="inline-flex items-center gap-4 py-2 px-3 outline outline-2 outline-white/10 rounded-lg"
-                >
-                  <TechIcon component={tool.iconType} />
-                  <span className="font-semibold">{tool.title}</span>
+              {interests.map((interest) => (
+                <div key={interest.title} className="flex items-center gap-2">
+                  <span>{interest.emoji}</span>
+                  <span>{interest.title}</span>
                 </div>
               ))}
             </div>
-          </Card> */}
+          </Card>
 
           <Card>
             <CardHeader title="My Hobbies" description="" />
@@ -202,11 +243,15 @@ export const AboutSection = () => {
               ))}
             </div>
           </Card>
+
           <Card>
             <CardHeader title="My Dream Job" description="" />
             <div className="mt-4">
               {expectations.map((expectations) => (
-                <div key={expectations.title} className="flex items-center gap-2">
+                <div
+                  key={expectations.title}
+                  className="flex items-center gap-2"
+                >
                   <span>{expectations.emoji}</span>
                   <span>{expectations.title}</span>
                 </div>
