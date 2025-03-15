@@ -38,7 +38,7 @@ export const HeroSection = () => {
             <span className="text-emerald-300">Xin Jiang</span>
           </h1>
           <p className="mt-4 text-white/60 md:text-lg">
-            This website is still under construction...
+            
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
