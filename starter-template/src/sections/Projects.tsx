@@ -6,44 +6,49 @@ import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
+import { CardHeader } from "@/components/CardHeader";
 
 const portfolioProjects = [
   {
     company: "Lim Geomatics",
     year: "Jan 2024 - Jul 2024",
-    title: "Flutter Mobile App",
+    title: "OpTracker Mobile App",
+    keywords: [
+      "Cross-platform (Android, Ios, Windows)",
+      "Mobile Development",
+      "Bluetooth",
+      "Embedded Device",
+      "Geospatial Data",
+      "Satellite Wifi",
+    ],
+    description:
+      "We started from scratch, and almost finish it at the end of my Co-op.",
     results: [
       {
-        title:
-          "Developed a Flutter application in a team of 3-4, providing navigation and safety features for forestry workers, including geo-data visualization.",
+        title: "The OpTracker App was previously developed in C# Xamarin",
       },
       {
         title:
-          "Built a sample application enabling communication with embedded devices via Bluetooth.",
+          "It is a tool designed for the forestry people, combining navigation and geospatial data displaying on a single screen",
       },
       {
         title:
-          "Designed and implemented a library for OAuth2 authentication to ArcGIS through a REST API.",
+          "It's paired with embedded devices to provide accurate GPS and satellite Wifi",
       },
       {
         title:
-          "Created a library to query data from ArcGIS and display JSON geo-data in map layers. .",
+          "We rebuilt it in a team of 4-5 and finished it in about a year, started with 0 knowledge of Flutter",
+      },
+      {
+        title: "My manager made me lead the team twice when he was on trips",
       },
       {
         title:
-          "Engineered a solution to integrate and display various mainstream map tile formats within the app.",
+          "There were only twice that I was free of tasks for a few hours, throught the year. Busy, busy, busy",
       },
       {
         title:
-          "Designed a library for satellite communication with embedded devices.",
-      },
-      {
-        title:
-          "Led a team of 4 in the absence of our manager for about two weeks, including pr review and task management.",
-      },
-      {
-        title:
-          "Collaborated with the UI/UX designer and QA to enhance user experience.",
+          "Usually, I had one huge task or several small ones for a bi-week sprint, and most of the time I completed on time",
       },
     ],
   },
@@ -51,41 +56,47 @@ const portfolioProjects = [
     company: "Lim Geomatics",
     year: "Sep 2023 - Jan 2024",
     title: "Configuration Tool for Embedded Application",
+    keywords: ["Java", "Embedded Device", "Serial Communication"],
+    description: "",
     results: [
       {
         title:
-          "Independently developed a Java-based configuration tool for Windows, enabling communication with embedded devices via the Kermit protocol over serial communication. ",
+          "This was my first task, and later my manager told me they were expecting me to do this for my whole Co-op term. But I finished the most of it within a month",
       },
       {
         title:
-          "Added new functionalities and fixed bugs in the embedded application such as motion detection. ",
+          "This was my first time developing an industry level software. I started from scratch and there was no similar code to learn from. I did all the coding by myself, with some help from my manager, and UI/UX design from our designer",
       },
       {
         title:
-          "Collaborated with our UI/UX designer for a better GUI experience.",
+          "We hold a tutorial teaching our colleagues how to use it, it was fun",
       },
     ],
   },
   {
     company: "Lim Geomatics",
     year: "Oct 2023 - Dec 2023",
-    title: "Real-time Location Sharing and Tracking",
+    title: "Real-time Location Sharing Feature",
+    keywords: [
+      "Cross-platform C#",
+      "Mobile Development",
+      "Android Studio",
+      "Embedded Device",
+      "Satellite Wifi",
+    ],
+    description: "",
     results: [
       {
         title:
-          "Developed a real-time location-sharing feature for a cross-platform C# application utilizing satellite communication and ArcGIS.",
+          "Again, started with 0 knowledge with mobile development, or satellite, or C#",
       },
       {
         title:
-          "Developed mechanisms to upload and download location data based on satellite signal strength and update locations dynamically on the map.",
+          "We completed the task in 2 weeks, including debugged together with another company's CTO",
       },
       {
         title:
-          "Collaborated with my supervisor to meet the tight deadline of two weeks without any previous experience with C# and later enhanced the feature by implementing a tracking display for a more user-friendly experience.",
-      },
-      {
-        title:
-          "Added a 'walking mode' feature to switch GPS data sources between the embedded device and the tablet.",
+          "We drove to the Britannia beach several times for testing",
       },
     ],
   },
@@ -98,57 +109,58 @@ export const ProjectsSection = () => {
         <SectionHeader
           title="Co-op Work Projects"
           eyebrow="Real-world Results"
-          description="Projects that I have worked on during my 3 co-op terms at Lim Geomatics."
+          description="Projects that I have worked on during my 3 Co-op terms at Lim Geomatics in Ottawa, ON"
         />
 
-        <div className="flex flex-col mt-10 md:mt-20 gap-10">
+        <div className="flex flex-col mt-10 md:mt-10 gap-10">
           {portfolioProjects.map((project) => (
             <Card
               key={project.title}
-              className="px-8 pt-8 pb=0 md:pt-12 md:px-10 lg:pt-16 lg:px-20 "
+              className="px-8 pt-8 pb=0 md:pt-8 md:px-8 lg:pt-16 lg:px-20 "
             >
-            
-                <div className="lg:pb-16">
-                  <div className="bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex font-bold uppercase traking-widest text-sm text-transparent bg-clip-text gap-2">
-                    <span>{project.company}</span>
-                    <span>&bull;</span>
-                    <span>{project.year}</span>
-                  </div>
-                  <h3 className="font-serif text-2xl mt-2 md:mt-5 md:text-4xl">
-                    {project.title}
-                  </h3>
-                  <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
-                  <ul className="flex flex-col gap-4 mt-4">
-                    {project.results.map((result) => (
-                      <li
-                        key={result.title}
-                        className="flex gap-2 text-sm md:text-base text-white/50 items-center"
-                      >
-                        <CheckCircleIcon className="w-5 h-5 md:w-6 md:h-6 flex-shrink-0" />
-                        <span>{result.title}</span>
-                      </li>
-                    ))}
-                  </ul>
-
-                  {/* {project.link && (
-                    <a href={project.link}>
-                      <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8">
-                        <span>View Live Site</span>
-                        <ArrowUpRightIcon className="size-4" />
-                      </button>
-                    </a>
-                  )} */}
+              <div className="lg:pb-16">
+                <div className="bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex font-bold uppercase traking-widest text-sm text-transparent bg-clip-text gap-2">
+                  <span>{project.company}</span>
+                  <span>&bull;</span>
+                  <span>{project.year}</span>
                 </div>
-                {/* {project.image && (
-                  <div className="relative">
-                    <Image
-                      src={project.image}
-                      alt={project.title}
-                      className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none"
-                    />
+                <h3 className="font-serif text-2xl mt-2 md:mt-5 md:text-4xl">
+                  {project.title}
+                </h3>
+                <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
+                <div className="mt-4">
+                  <div className="flex flex-wrap gap-2 mt-2">
+                    {project.keywords.map((keyword, index) => (
+                      <span
+                        key={index}
+                        className="px-3 py-1 text-sm bg-gray-200 text-gray-700 rounded-lg"
+                      >
+                        {keyword}
+                      </span>
+                    ))}
                   </div>
-                )} */}
-              {/* </div> */}
+                </div>
+                <div className="mt-4">
+                  <div className="flex flex-wrap gap-2 mt-2">
+                    <span className="px-3 py-1 text-sm text-gray-700 rounded-lg"></span>
+                  </div>
+                </div>
+
+                <ul className="flex flex-col gap-4 mt-4">
+                  <span className="bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex font-bold uppercase traking-widest text-sm text-transparent bg-clip-text gap-2">
+                    Fun Facts
+                  </span>
+                  {project.results.map((result) => (
+                    <li
+                      key={result.title}
+                      className="flex gap-2 text-sm md:text-base text-white/50 items-center"
+                    >
+                      {/* <CheckCircleIcon className="w-5 h-5 md:w-6 md:h-6 flex-shrink-0" /> */}
+                      <span>{result.title}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </Card>
           ))}
         </div>

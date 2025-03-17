@@ -110,6 +110,14 @@ const expectations = [
     emoji: "💰",
   },
   {
+    title: "Cafeteria",
+    emoji: "🍛",
+  },
+  {
+    title: "Flexibility",
+    emoji: "🕰️",
+  },
+  {
     title: "Learning Support",
     emoji: "📚",
   },
@@ -124,10 +132,6 @@ const expectations = [
   {
     title: "Good Management",
     emoji: "🤝",
-  },
-  {
-    title: "Flexibility",
-    emoji: "🕰️",
   },
 ];
 
@@ -201,8 +205,33 @@ export const AboutSection = () => {
                 height="315"
                 src="https://www.youtube.com/embed/YcuIyhJHv14?si=dGLUt7hfXV4qNHlP"
                 title="YouTube video player"
-                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </Card>
+
+          <Card className="h-auto">
+            <CardHeader title="Fun Robot Project" description="" />
+
+            <div className="w-full mx-auto mt-4">
+              <span className="block mb-4">
+                <p>
+                  The robot will pick up all the green subjects in the left up
+                  corner and drop them on the goals in the right bottom corner.
+                </p>
+                <p>
+                  The requirement is to find the shortest path and avoid walls
+                  but boxes are fine.
+                </p>
+              </span>
+              <iframe
+                width="100%"
+                height="420"
+                src="https://www.youtube.com/embed/orJY1JCV-iY"
+                title="zone 3 Xin Jiang"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
                 allowFullScreen
               ></iframe>
             </div>

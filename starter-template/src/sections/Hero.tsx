@@ -16,7 +16,7 @@ export const HeroSection = () => {
   return (
     <section
       id="home-section"
-      className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip"
+      className="pt-32 md:pt-30 lg:pt-30 relative z-0 overflow-x-clip"
     >
       <div className="container">
         <div className="flex flex-col items-center">
@@ -34,11 +34,12 @@ export const HeroSection = () => {
         </div>
         <div className="max-w-lg mx-auto text-center sticky top-0 bg-gray-900 py-4 z-10">
           <h1 className="font-serif text-3xl md:text-5xl tracking-wide">
-            Hey there! I&apos;m{" "}
-            <span className="text-emerald-300">Xin Jiang</span>
+            Hey there! I&apos;m <span className="text-emerald-300">Xin</span>
           </h1>
+
           <p className="mt-4 text-white/60 md:text-lg">
-            
+            I have one year Co-op experience on a variety of different projects
+            in software development.{" "}
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
