@@ -31,7 +31,7 @@ const testimonials = [
 
 export const TestimonialsSection = () => {
   return (
-    <section id="about-section" className="py-16 lg:py-24">
+    <section id="manager-section" className="py-16 lg:py-24">
       <div className="container">
         <SectionHeader
           eyebrow="Happy Manager"
