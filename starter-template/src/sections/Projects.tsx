@@ -97,6 +97,9 @@ const portfolioProjects = [
       {
         title: "We drove to the Britannia beach several times for testing",
       },
+      {
+        title: "In the end, many thanks to my manager for trusting me",
+      },
     ],
   },
 ];
