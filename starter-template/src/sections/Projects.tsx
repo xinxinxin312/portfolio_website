@@ -12,7 +12,7 @@ const portfolioProjects = [
   {
     company: "Lim Geomatics",
     year: "Jan 2024 - Jul 2024",
-    title: "OpTracker Mobile App",
+    title: "Navigation Mobile App",
     keywords: [
       "Cross-platform (Android, Ios, Windows)",
       "Mobile Development",
@@ -21,34 +21,30 @@ const portfolioProjects = [
       "Geospatial Data",
       "Satellite Wifi",
     ],
-    description:
-      "We started from scratch, and almost finish it at the end of my Co-op.",
+    description: "",
     results: [
-      {
-        title: "The OpTracker App was previously developed in C# Xamarin",
-      },
       {
         title:
           "It is a tool designed for the forestry people, combining navigation and geospatial data displaying on a single screen",
       },
       {
         title:
-          "It's paired with embedded devices to provide accurate GPS and satellite Wifi",
+          "It's paired with embedded devices to provide accurate GPS and satellite Wifi, so people can connect to internet in the forest",
       },
       {
         title:
-          "We rebuilt it in a team of 4-5 and finished it in about a year, started with 0 knowledge of Flutter",
+          "We worked on it in a team of 4-5, started with 0 knowledge of Flutter, all of us",
       },
       {
         title: "My manager made me lead the team twice when he was on trips",
       },
       {
         title:
-          "There were only twice that I was free of tasks for a few hours, throught the year. Busy, busy, busy",
+          "I only remember the major tasks that I've worked on. Usually, I had one huge task or several small ones for a bi-week sprint, and most of the time I completed on time",
       },
       {
         title:
-          "Usually, I had one huge task or several small ones for a bi-week sprint, and most of the time I completed on time",
+          "I personaly prefer Flutter to React Native. I hope Flutter can be popular soon so it'll be easier for me to find a job",
       },
     ],
   },
@@ -61,15 +57,19 @@ const portfolioProjects = [
     results: [
       {
         title:
-          "This was my first task, and later my manager told me they were expecting me to do this for my whole Co-op term. But I finished the most of it within a month",
+          "This was my first task, and later my manager told me that they were expecting me to do it for my whole Co-op term. But I finished the most of it within a month",
       },
       {
         title:
-          "This was my first time developing an industry level software. I started from scratch and there was no similar code to learn from. I did all the coding by myself, with some help from my manager, and UI/UX design from our designer",
+          "This was my first time developing an industry level software application. I started from scratch and there was no similar code to learn from. I did all the coding by myself, with some help from my manager, and UI/UX design from our designer",
       },
       {
         title:
-          "We hold a tutorial teaching our colleagues how to use it, it was fun",
+          "We hold a tutorial to train our colleagues on how to use it, it was fun",
+      },
+      {
+        title:
+          "It's a unique experience, I guess not many companies let Co-op students develop a software application independently",
       },
     ],
   },
@@ -92,11 +92,10 @@ const portfolioProjects = [
       },
       {
         title:
-          "We completed the task in 2 weeks, including debugged together with another company's CTO",
+          "We completed the task in 2 weeks, including debugging together with another company's CTO",
       },
       {
-        title:
-          "We drove to the Britannia beach several times for testing",
+        title: "We drove to the Britannia beach several times for testing",
       },
     ],
   },
