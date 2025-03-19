@@ -38,8 +38,9 @@ export const HeroSection = () => {
           </h1>
 
           <p className="mt-4 text-white/60 md:text-lg">
-            I have one year Co-op experience on a variety of different projects
-            in software development.{" "}
+            I have one year software developer Co-op experience in
+            cross-platform (Android, iOS, UWP, Web) development and embedded
+            system
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
