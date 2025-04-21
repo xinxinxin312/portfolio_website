@@ -46,7 +46,7 @@ export const TestimonialsSection = () => {
                 <div className="flex gap-4 items-center">
                   <div>
                     <div className="font-semibold">{testimonial.name}</div>
-                    <div className="bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex font-bold uppercase traking-widest text-sm text-transparent bg-clip-text gap-2">
+                    <div className="bg-gradient-to-r from-purple-300 to-sky-400 inline-flex font-bold uppercase traking-widest text-sm text-transparent bg-clip-text gap-2">
                       {testimonial.position}
                     </div>
                   </div>

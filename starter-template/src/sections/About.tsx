@@ -212,7 +212,7 @@ export const AboutSection = () => {
           </Card>
 
           <Card className="h-auto">
-            <CardHeader title="Fun Robot Project" description="" />
+            <CardHeader title="My Fun Robot Project" description="" />
 
             <div className="w-full mx-auto mt-4">
               <span className="block mb-4">

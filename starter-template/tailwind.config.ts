@@ -24,6 +24,17 @@ const config: Config = {
       fontFamily: {
         sans:'var(--font-sans)',
         serif:'var(--font-serif)',
+      },
+      animation: {
+        'bounce-slow': 'bounce 3s infinite',
+        'spin-slow': 'spin 6s linear infinite',
+        'float': 'float 6s ease-in-out infinite',
+      },
+      keyframes: {
+        float: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-20px)' },
+        }
       }
     },
   },

@@ -25,7 +25,7 @@ const portfolioProjects = [
     results: [
       {
         title:
-          "It is a tool designed for the forestry people, combining navigation and geospatial data displaying on a single screen",
+          "It is a tool designed for the forestry people, combining navigation and geospatial data displaying on a single screen, providing plenty of useful tools to make their work easier",
       },
       {
         title:
@@ -33,7 +33,7 @@ const portfolioProjects = [
       },
       {
         title:
-          "We worked on it in a team of 4-5, started with 0 knowledge of Flutter, all of us",
+          "We worked in a team of 4-5, started with 0 knowledge of Flutter, all of us",
       },
       {
         title: "My manager made me lead the team twice when he was on trips",
@@ -106,7 +106,7 @@ const portfolioProjects = [
 
 export const ProjectsSection = () => {
   return (
-    <section id="projects-section" className="pb-10 lg:py-24">
+    <section id="projects-section" className="pb-15 lg:py-0">
       <div className="container">
         <SectionHeader
           title="Co-op Work Projects"
@@ -121,7 +121,7 @@ export const ProjectsSection = () => {
               className="px-8 pt-8 pb=0 md:pt-8 md:px-8 lg:pt-16 lg:px-20 "
             >
               <div className="lg:pb-16">
-                <div className="bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex font-bold uppercase traking-widest text-sm text-transparent bg-clip-text gap-2">
+                <div className="bg-gradient-to-r from-purple-300 to-sky-400 inline-flex font-bold uppercase traking-widest text-sm text-transparent bg-clip-text gap-2">
                   <span>{project.company}</span>
                   <span>&bull;</span>
                   <span>{project.year}</span>
@@ -149,7 +149,7 @@ export const ProjectsSection = () => {
                 </div>
 
                 <ul className="flex flex-col gap-4 mt-4">
-                  <span className="bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex font-bold uppercase traking-widest text-sm text-transparent bg-clip-text gap-2">
+                  <span className="bg-gradient-to-r from-purple-300 to-sky-400 inline-flex font-bold uppercase traking-widest text-sm text-transparent bg-clip-text gap-2">
                     Fun Facts
                   </span>
                   {project.results.map((result) => (
