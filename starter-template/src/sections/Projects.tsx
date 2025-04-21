@@ -65,7 +65,7 @@ const portfolioProjects = [
       },
       {
         title:
-          "We hold a tutorial to train our colleagues on how to use it, it was fun",
+          "We held a tutorial to train our colleagues on how to use it, it was fun",
       },
       {
         title:
